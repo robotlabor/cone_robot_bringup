@@ -1,0 +1,347 @@
+{
+  "configById": {
+    "Gauge!1e4hf29": {
+      "path": "/odrive_axis1/odrive_status.bus_voltage",
+      "minValue": 0,
+      "maxValue": 26,
+      "colorMap": "red-yellow-green",
+      "colorMode": "gradient",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": false,
+      "foxglovePanelTitle": "Battery voltage [V]"
+    },
+    "Publish!4abmmpw": {
+      "buttonText": "STOP",
+      "buttonTooltip": "",
+      "advancedView": false,
+      "value": "{\n  \"linear\": {\n    \"x\": 0,\n    \"y\": 0,\n    \"z\": 0\n  },\n  \"angular\": {\n    \"x\": 0,\n    \"y\": 0,\n    \"z\": 0\n  }\n}",
+      "topicName": "/cmd_vel",
+      "datatype": "geometry_msgs/msg/Twist"
+    },
+    "Gauge!pe3q8c": {
+      "path": "/odrive_axis3/odrive_status.bus_current",
+      "minValue": -4,
+      "maxValue": 80,
+      "colorMap": "red-yellow-green",
+      "colorMode": "colormap",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": true,
+      "foxglovePanelTitle": "FLM Current [A]"
+    },
+    "CallService!3vfjp5u": {
+      "requestPayload": "{\"axis_requested_state\":8}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis3/request_axis_state",
+      "buttonText": "Front Left Motor Start",
+      "editingMode": false,
+      "foxglovePanelTitle": "FLM Start"
+    },
+    "CallService!2orxbib": {
+      "requestPayload": "{\"axis_requested_state\":1}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis3/request_axis_state",
+      "buttonText": "Front Left Motor Idle",
+      "editingMode": false,
+      "foxglovePanelTitle": "FLM Idle"
+    },
+    "Gauge!3lht2t6": {
+      "path": "/odrive_axis2/odrive_status.bus_current",
+      "minValue": -4,
+      "maxValue": 80,
+      "colorMap": "red-yellow-green",
+      "colorMode": "colormap",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": true,
+      "foxglovePanelTitle": "RLM Current [A]"
+    },
+    "CallService!47hzmm": {
+      "requestPayload": "{\"axis_requested_state\":8}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis2/request_axis_state",
+      "buttonText": "Rear Left Motor Start",
+      "editingMode": false,
+      "foxglovePanelTitle": "RLM Start"
+    },
+    "CallService!4h6l7wu": {
+      "requestPayload": "{\"axis_requested_state\":1}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis2/request_axis_state",
+      "buttonText": "Rear Left Motor Idle",
+      "editingMode": false,
+      "foxglovePanelTitle": "RLM Start"
+    },
+    "Gauge!401kkpc": {
+      "path": "/odrive_axis4/odrive_status.bus_current",
+      "minValue": -4,
+      "maxValue": 80,
+      "colorMap": "red-yellow-green",
+      "colorMode": "colormap",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": true,
+      "foxglovePanelTitle": "FRM Current [A]"
+    },
+    "CallService!3ntmq20": {
+      "requestPayload": "{\"axis_requested_state\":8}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis4/request_axis_state",
+      "buttonText": "Front Right Motor Start",
+      "editingMode": false,
+      "foxglovePanelTitle": "FRM Start"
+    },
+    "CallService!9e0igq": {
+      "requestPayload": "{\"axis_requested_state\":1}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis4/request_axis_state",
+      "buttonText": "Front Right Motor Idle",
+      "editingMode": false,
+      "foxglovePanelTitle": "FRM Idle"
+    },
+    "Gauge!3hzlf0o": {
+      "path": "/odrive_axis1/odrive_status.bus_current",
+      "minValue": -4,
+      "maxValue": 80,
+      "colorMap": "red-yellow-green",
+      "colorMode": "colormap",
+      "gradient": [
+        "#0000ff",
+        "#ff00ff"
+      ],
+      "reverse": true,
+      "foxglovePanelTitle": "RRM Current [A]"
+    },
+    "CallService!28p5b23": {
+      "requestPayload": "{\"axis_requested_state\":8}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis1/request_axis_state",
+      "buttonText": "Rear Right Motor Start",
+      "editingMode": false,
+      "foxglovePanelTitle": "RRM Start"
+    },
+    "CallService!31sf3zw": {
+      "requestPayload": "{\"axis_requested_state\":1}",
+      "layout": "vertical",
+      "timeoutSeconds": 10,
+      "serviceName": "/odrive_axis1/request_axis_state",
+      "buttonText": "Rear Right Motor Idle",
+      "editingMode": false,
+      "foxglovePanelTitle": "RRM Start"
+    },
+    "3D!18i6zy7": {
+      "layers": {
+        "845139cb-26bc-40b3-8161-8ab60af4baf5": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "845139cb-26bc-40b3-8161-8ab60af4baf5",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 1
+        }
+      },
+      "cameraState": {
+        "distance": 9.753499582310297,
+        "perspective": true,
+        "phi": 59.999999999999744,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0.12477090681820684,
+          0.3119272670455182,
+          1.2651995115855187e-17
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45.00000000000006,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {}
+    },
+    "Image!3mnp456": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/zed2i/zed_node/rgb_raw/image_raw_color"
+      }
+    },
+    "RawMessages!os6rgs": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "",
+      "fontSize": 12
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "direction": "row",
+    "first": {
+      "first": {
+        "first": {
+          "first": "Gauge!1e4hf29",
+          "second": "Publish!4abmmpw",
+          "direction": "column",
+          "splitPercentage": 69.89795918367349
+        },
+        "second": {
+          "first": "Gauge!pe3q8c",
+          "second": {
+            "first": "CallService!3vfjp5u",
+            "second": "CallService!2orxbib",
+            "direction": "row"
+          },
+          "direction": "column",
+          "splitPercentage": 68.62244897959184
+        },
+        "direction": "column"
+      },
+      "second": {
+        "first": "Gauge!3lht2t6",
+        "second": {
+          "first": "CallService!47hzmm",
+          "second": "CallService!4h6l7wu",
+          "direction": "row"
+        },
+        "direction": "column",
+        "splitPercentage": 70.19230769230771
+      },
+      "direction": "column",
+      "splitPercentage": 69.44198405668733
+    },
+    "second": {
+      "direction": "row",
+      "first": {
+        "first": {
+          "first": "Gauge!401kkpc",
+          "second": {
+            "first": "CallService!3ntmq20",
+            "second": "CallService!9e0igq",
+            "direction": "row"
+          },
+          "direction": "column",
+          "splitPercentage": 68.87755102040816
+        },
+        "second": {
+          "first": "Gauge!3hzlf0o",
+          "second": {
+            "first": "CallService!28p5b23",
+            "second": "CallService!31sf3zw",
+            "direction": "row"
+          },
+          "direction": "column",
+          "splitPercentage": 70.26378896882495
+        },
+        "direction": "column",
+        "splitPercentage": 69.44198405668733
+      },
+      "second": {
+        "first": "3D!18i6zy7",
+        "second": {
+          "first": "Image!3mnp456",
+          "second": "RawMessages!os6rgs",
+          "direction": "column",
+          "splitPercentage": 30
+        },
+        "direction": "row",
+        "splitPercentage": 70
+      },
+      "splitPercentage": 21.500886631957712
+    },
+    "splitPercentage": 17.191977077363912
+  }
+}
