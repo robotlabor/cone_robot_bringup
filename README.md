@@ -1,4 +1,11 @@
-# Bringup guide for Cone Robot
+# Automated Bringup Guide for TYR Robot Platform
+
+## Overview
+This section presents the automatized, Ubuntu service-based system that carries out the bringup of the TYR mobile platform. It also includes a user manual-like step-by-step tutorial for running the robot.
+
+TODO
+
+# Manual Bringup Guide for TYR Robot Platform
 
 ## Overview
 This guide provides instructions for launching ROS 2 nodes to integrate an ODrive motor driver via CAN and a CubePilot CubeOrange controller on the Cone Robot platform. 
